@@ -8,6 +8,12 @@ namespace ConsoleApp
     public class Pascaleira
     {
 
+        public static void ParesEntreAeB(int a, int b)
+        {
+            if (a % 2 == 0) Console.WriteLine(a);
+            if (a < b) ParesEntreAeB((a + 1), b);
+        }
+
         private static int Soma(int valorA, int valorB)
         {
             return valorA + valorB;
@@ -110,16 +116,27 @@ namespace ConsoleApp
 
     class Program
     {
+        private static int RequestNumber()
+        {
+            Console.WriteLine("Número?");
+            return int.Parse(Console.ReadLine());
+        }
+
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("Qual o número de números naturais?");
-            ////var n = int.Parse(Console.ReadLine());
-            //var tabuleiro = new int[][] { new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } };
-
-            ////DisplayTabuleiro(tabuleiro);
-            //DisplayTabuleiroRec(tabuleiro);
-            Pascaleira.ApresentarSomaEDivisao(3, 5);
+            int a = RequestNumber();
+            int b = RequestNumber();
+            ParesEntreAeB(a, b);
+            //for(var i = a; i <= b; i++)
+            //{
+            //    if(i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
         }
+
+        
     }
 }
