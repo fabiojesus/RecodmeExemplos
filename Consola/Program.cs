@@ -7,7 +7,17 @@ namespace ConsoleApp
 
     public class Pascaleira
     {
-
+        static void Factorial(int num, int total = 1)
+        {
+            if (num == 1) Console.WriteLine($"1 = {total}");
+            else
+            {
+                Console.Write($"{num} x ");
+                total *= num;
+                num--;
+                Factorial(num, total);
+            }
+        }
         public static void ParesEntreAeB(int a, int b)
         {
             if (a % 2 == 0) Console.WriteLine(a);
@@ -126,16 +136,20 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             int a = RequestNumber();
-            int b = RequestNumber();
-            ParesEntreAeB(a, b);
-            //for(var i = a; i <= b; i++)
+            Console.Write($"{a}! = ");
+            Factorial(a);
+            //int total = 1;
+            //Console.Write($"{a}! = ");
+            //while(a > 1)
             //{
-            //    if(i % 2 == 0)
-            //    {
-            //        Console.WriteLine(i);
-            //    }
+            //    Console.Write($"{a} x ");
+            //    total *= a;
+            //    a--;
             //}
+            //Console.WriteLine($"1 = {total}");
         }
+
+  
 
         
     }
