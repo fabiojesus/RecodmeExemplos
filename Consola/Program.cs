@@ -1,5 +1,6 @@
 ﻿
 using DemonstracaoV2;
+using Recodme.Formacao.DemonstracaoV2;
 using Recodme.Formacao.DemonstracaoV2.ClassesAndInterfaces.ClassesAndStructs;
 using Recodme.Formacao.DemonstracaoV2.ClassesAndInterfaces.ClassesAndStructs.AddingBehaviours;
 using Recodme.Formacao.DemonstracaoV2.ClassesAndInterfaces.Exceptions;
@@ -13,7 +14,7 @@ namespace Recodme.Formacao.Consola
     {
         static void Main(string[] args)
         {
-            IndexTester.TestIndex();
+            LinqTester.TestLinq();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Recodme.Formacao.DemonstracaoV2.ClassesAndInterfaces.ClassesAndStructs.SecondIteration
@@ -36,8 +37,9 @@ namespace Recodme.Formacao.DemonstracaoV2.ClassesAndInterfaces.ClassesAndStructs
         private void GenerateId()
         {
             SetId(string.Empty);
+            
         }
-
+        
         private string id;
         public string GetId()
         {
@@ -179,7 +181,6 @@ namespace Recodme.Formacao.DemonstracaoV2.ClassesAndInterfaces.ClassesAndStructs
                 case "F": user.SetGender(Gender.Female);break;
 
             }
-
             return user;
         }
 

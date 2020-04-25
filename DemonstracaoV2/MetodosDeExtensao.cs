@@ -34,7 +34,7 @@ namespace DemonstracaoV2
             return num > min - 1 && num < max + 1;
         }
 
-        public static DateTime SubtractDays(this DateTime date, int days) 
+        public static DateTime SubtractDays(this DateTime date, int days)
         {
             return date.AddDays(-1 * days);
         }

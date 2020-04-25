@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Recodme.Formacao.Demos.DemonstracaoV2.Namespaces
@@ -28,6 +29,12 @@ namespace Recodme.Formacao.Demos.DemonstracaoV2.Namespaces
         Blue = 0x0000FF,
         Brown = 0x800000,
         Black = 0x000000
+    }
+
+    public class Car
+    {
+        public int Year { get; set; }
+        public Color Color { get; set; }
     }
 
 }
