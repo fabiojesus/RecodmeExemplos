@@ -16,7 +16,7 @@ namespace DemonstracaoV1
 
         public static void TestRounding()
         {
-            var ipos = 3.5;
+            var ipos = 1.6;
             var ineg = -3.5;
 
             Console.WriteLine($"Negativo\n Floor{Math.Floor(ineg)}\nCeiling {Math.Ceiling(ineg)}\nRound {Math.Round(ineg)}\nTruncate {Math.Truncate(ineg)}");

@@ -20,16 +20,6 @@ namespace DemonstracaoV1
             //text[0] = 'u';
         }
 
-        public static string SecondHalfSetence(string text)
-        {
-            //dividir uma frase ao meio (arredonda o resto para cima)
-            var half = (double)text.Length / 2;
-            var halfPosition = (int)Math.Floor(half);
-            var remainder = (int)Math.Ceiling(half);
-            if (halfPosition + remainder > text.Length) remainder--;
-            else if (halfPosition + remainder < text.Length) remainder++;
-            return text.Substring(halfPosition, remainder);
-        }
 
         #endregion
 
@@ -40,7 +30,7 @@ namespace DemonstracaoV1
 
             foreach (var @char in text)
             {
-                result = @char + result;
+                result = @char + result;  
             }
 
             return result;
@@ -164,6 +154,19 @@ namespace DemonstracaoV1
         #endregion
 
         #region Funcionalidades do tipo String
+
+
+        public static string SecondHalfSetence(string text)
+        {
+            //dividir uma frase ao meio (arredonda o resto para cima)
+            var half = (double)text.Length / 2;
+            var halfPosition = (int)Math.Floor(half);
+            var remainder = (int)Math.Ceiling(half);
+            if (halfPosition + remainder > text.Length) remainder--;
+            else if (halfPosition + remainder < text.Length) remainder++;
+            return text.Substring(halfPosition, remainder);
+        }
+
         public static string[] WordsInASetence(string text)
         {
             return text.Split(" ");

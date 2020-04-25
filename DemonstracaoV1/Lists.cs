@@ -15,7 +15,6 @@ namespace DemonstracaoV1
             var second = list[1];
             list.Remove(41); //remove 41
             list.RemoveAt(1); //remove o segundo elemento
-
             var lst = new List<object>();
             lst.Add(1);
             lst.Add("aosd");
