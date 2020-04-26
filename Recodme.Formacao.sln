@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{42ECAF52
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{2534C824-F9CE-4A85-97C2-022B973C2A18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{4F6EEFC2-508F-4105-87AB-0C63C572D48F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{581D2DB0-BACD-4F70-9A66-B93B2BDF99CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581D2DB0-BACD-4F70-9A66-B93B2BDF99CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{581D2DB0-BACD-4F70-9A66-B93B2BDF99CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6EEFC2-508F-4105-87AB-0C63C572D48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6EEFC2-508F-4105-87AB-0C63C572D48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6EEFC2-508F-4105-87AB-0C63C572D48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6EEFC2-508F-4105-87AB-0C63C572D48F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{85F952FF-9C93-41AD-B4B5-AF3F42F1B5EE} = {42ECAF52-4B3A-4A8F-8C78-343D355E24BA}
 		{581D2DB0-BACD-4F70-9A66-B93B2BDF99CC} = {42ECAF52-4B3A-4A8F-8C78-343D355E24BA}
+		{4F6EEFC2-508F-4105-87AB-0C63C572D48F} = {42ECAF52-4B3A-4A8F-8C78-343D355E24BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E629564-5788-4E64-A294-FA035D54BFB9}

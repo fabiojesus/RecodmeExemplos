@@ -5,8 +5,4 @@
     <RootNamespace>Recodme.Formacao.DemonstracaoV2</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="ClassesAndInterfaces\Generics\" />
-  </ItemGroup>
-
 </Project>
